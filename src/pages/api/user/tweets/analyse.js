@@ -10,6 +10,6 @@ export default async function handlerAnalyse(req, res) {
     }
   } catch (err) {
     console.log(err);
-    res.status(500).json({ mesagge: "Error al analizar" });
+    res.status(500).json({ error: "Error al analizar" });
   }
 }

@@ -1,0 +1,20 @@
+.tweetContainer {
+  max-height: 70px;
+  min-height: 45px;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.tweetContainer:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.tweetContainer:last-child {
+  border-radius: 0 0 8px 8px;
+  border: none;
+}
+
+.textTweet {
+  font-size: 10px;
+  margin: 4px;
+}

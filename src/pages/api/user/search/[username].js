@@ -14,6 +14,6 @@ export default async function handlerSearch(req, res) {
       metrics: user.data.public_metrics,
     });
   } catch (err) {
-    res.status(500).json({ message: "Error al buscar usuario" });
+    res.status(500).json({ error: "Error al buscar usuario" });
   }
 }

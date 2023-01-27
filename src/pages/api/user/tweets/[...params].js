@@ -25,6 +25,6 @@ export default async function handlerTweets(req, res) {
     });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ message: "Error al recopilar tweets" });
+    res.status(500).json({ error: "Error al recopilar tweets" });
   }
 }

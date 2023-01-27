@@ -1,0 +1,28 @@
+.alertContainer {
+  position: fixed;
+  bottom: 32px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  padding-left: 12px;
+  border-radius: 10px;
+
+  transform: translate(200%);
+  transition: all ease-out 0.5s;
+}
+
+.alertTitle {
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .alertContainer {
+    bottom: 20px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
