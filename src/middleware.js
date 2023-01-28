@@ -5,7 +5,7 @@ const host = process.env.NEXT_PUBLIC_HOST;
 
 export const middleware = (req) => {
   if (req.nextUrl.origin !== host)
-    return NextResponse.json({ error: "Acceso denegado" }).status(401);
+    return NextResponse.status(401).json({ error: "Acceso denegado" });
   return NextResponse.next();
 };
 
