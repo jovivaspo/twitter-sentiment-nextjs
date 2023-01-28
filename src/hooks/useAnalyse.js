@@ -12,6 +12,10 @@ const useAnalyse = () => {
       const copyTweets = tweets;
       setTweets([]);
       setLoading(true);
+      setAlert({
+        type: "info",
+        message: "Esto podría tardar un poco...",
+      });
       const res = await helpHttp().post(urls().analyse, {
         headers: {
           "Content-Type": "application/json",

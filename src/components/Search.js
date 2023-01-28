@@ -6,12 +6,13 @@ import styles from "@/styles/Search.module.css";
 
 const Search = () => {
   const [search, setSearch] = useState("");
-  const { setLoading, setAlert, setUser } = useContext(GeneralContext);
+  const { loading, setLoading, setAlert, setUser } = useContext(GeneralContext);
 
   const handlerSearch = async (e) => {
     try {
       //Eliminar el @
       e.preventDefault();
+
       if (search === "") return false;
 
       setLoading(true);
@@ -58,6 +59,7 @@ const Search = () => {
         <button
           className={styles.buttonForm}
           type="submit"
+          disabled={loading}
           onClick={handlerSearch}
         >
           Buscar
