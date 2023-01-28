@@ -1,5 +1,5 @@
 import { styleResults } from "../services/stylesResults";
-import { useResults } from "../Hooks/useResults";
+import { useResults } from "../hooks/useResults";
 import styles from "@/styles/ResumeResults.module.css";
 import { category } from "../services/category";
 

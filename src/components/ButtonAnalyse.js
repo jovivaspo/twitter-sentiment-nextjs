@@ -1,4 +1,4 @@
-import { useAnalyse } from "../Hooks/useAnalyse";
+import { useAnalyse } from "../hooks/useAnalyse";
 import styles from "@/styles/ButtonAnalyse.module.css";
 
 const ButtonAnalyse = () => {
