@@ -6,3 +6,4 @@ Dockerfile
 node_modules
 Requests
 README.md
+.env.local
