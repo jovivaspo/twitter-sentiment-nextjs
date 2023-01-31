@@ -1,4 +1,4 @@
-const host = process.env.NEXT_PUBLIC_HOST;
+const host = process.env.NEXT_PUBLIC_ORIGIN_CORS;
 const urls = () => {
   return {
     search: `${host}/api/user/search`,
