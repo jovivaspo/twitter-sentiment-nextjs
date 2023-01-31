@@ -28,7 +28,7 @@ export const helpHttp = () => {
     return fetch(endpoint, options)
       .then((res) => res.json())
       .then((json) => json)
-      .catch((err) => console.log(err));
+      .catch((err) => ({ error: "Algo salió mal" }));
   };
 
   const get = (url, options = {}) => customFetch(url, options);
