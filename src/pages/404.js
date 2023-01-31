@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styles from "@/styles/404.module.css";
-const host = process.env.NEXT_PUBLIC_HOST;
+
+const host = process.env.NEXT_PUBLIC_ORIGIN_CORS;
+
 export default function Custom404() {
   return (
     <div className={styles.containerNotFound}>
