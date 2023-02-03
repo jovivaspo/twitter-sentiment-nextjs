@@ -5,7 +5,7 @@ export default async function handlerSearch(req, res) {
     const user = await roClient.v2.userByUsername(username, {
       "user.fields": ["created_at", "profile_image_url", "public_metrics"],
     });
-    res.status(200).json({
+    return res.status(200).json({
       id: user.data.id,
       name: user.data.name,
       username: user.data.username,
@@ -14,6 +14,6 @@ export default async function handlerSearch(req, res) {
       metrics: user.data.public_metrics,
     });
   } catch (err) {
-    res.status(500).json({ error: "Error al buscar usuario" });
+    return res.status(500).json({ error: "Error al buscar usuario" });
   }
 }

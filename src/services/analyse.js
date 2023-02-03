@@ -1,6 +1,6 @@
 import sentiment from "multilang-sentiment";
 
-const analyse = (tweets) => {
+const analyse = async (tweets) => {
   const analysedTweets = tweets.map((tweet) => {
     const result = sentiment(tweet.message, "es", {
       words: {
